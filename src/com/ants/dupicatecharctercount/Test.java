@@ -22,7 +22,6 @@ public class Test {
         Set<Integer> set = new LinkedHashSet<>();
         Set<Integer> l1 = l.stream().filter(x -> !set.add(x)).collect(Collectors.toSet());
 
-
         Map<Integer, Integer> integerMap = new LinkedHashMap<>();
         for (Integer i : l) {
             if (integerMap.containsKey(i)) {

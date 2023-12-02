@@ -22,5 +22,7 @@ public class Test {
 
         Double collect = employees.stream().collect(Collectors.summingDouble(x -> x.getSalary()));
         System.out.println(collect);
+
+
     }
 }

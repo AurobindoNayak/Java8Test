@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 public class StringTest {
     public static int solution(String S, int[] C) {
        List<String> charcterList = Arrays.asList(S.split(""));
-       List<Integer> l = Arrays.stream(C).boxed().collect(Collectors.toList());
+       List<Integer> l = Arrays.stream(C).boxed().toList();
        List<Integer> index = new ArrayList<>();
         List<Integer> sum = new ArrayList<>();
        for(int i=0; i<charcterList.size()-1; i++){
@@ -32,6 +32,6 @@ public class StringTest {
 
     public static void main(String[] args) {
         int A[] ={3,4,5,6};
-        System.out.println(solution("aaaa",A));
+        System.out.println(solution("abaa",A));
     }
 }

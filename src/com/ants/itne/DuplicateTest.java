@@ -12,7 +12,7 @@ public class DuplicateTest {
     //5- Add it in a set in side the loop
 
     public static void main(String[] args) {
-        String s = "bat cat rat tab";  // bat & tab are duplicate as they contains same character in shuffling manner
+        String s = "bat cat rat tab";  // bat & tab are duplicate as they contain same character in shuffling manner
         List<String> l1 = Arrays.asList(s.split(" "));
         Set<String> s3 = new TreeSet<>();
         for(String s1 : l1){
