@@ -20,7 +20,9 @@ public class Test {
 
         //to find only duplicate elements present in a list
         Set<Integer> set = new LinkedHashSet<>();
-        Set<Integer> l1 = l.stream().filter(x -> !set.add(x)).collect(Collectors.toSet());
+       // Set<Integer> l1 = l.stream().filter(x -> !set.add(x)).collect(Collectors.toSet());
+        Set<Integer> l3 = l.stream().filter(x-> set.add(x)==false).collect(Collectors.toSet());
+        System.out.println("l3 is"+l3);
 
         Map<Integer, Integer> integerMap = new LinkedHashMap<>();
         for (Integer i : l) {
