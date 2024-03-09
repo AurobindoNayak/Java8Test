@@ -23,7 +23,7 @@ public class ComparatorTest {
         System.out.println("Sorted by Age::" + sortedAge);
 
         //Sorted by mark
-        List<Student> sortedMark = students.stream().sorted((a, b) -> Double.compare(a.getMarks(), b.getMarks())).collect(Collectors.toList());
+        List<Student> sortedMark = students.stream().sorted((a, b) -> Double.compare(b.getMarks(), a.getMarks())).collect(Collectors.toList());
         System.out.println("Sorted by mark:: " + sortedMark);
 
         //Sort by mark & name

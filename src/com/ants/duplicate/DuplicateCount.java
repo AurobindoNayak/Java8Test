@@ -15,7 +15,8 @@ public class DuplicateCount {
         Map<String, Long> m = Arrays.stream(s.toLowerCase().split("")).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
         System.out.println(m);
 
-        List<String> unique = Arrays.stream(s.toLowerCase().split("")).distinct().collect(Collectors.toList());
+        List<String> unique = Arrays.asList(s.toLowerCase().split("")).stream().distinct().collect(Collectors.toList());
         System.out.println(unique);
+        
     }
 }

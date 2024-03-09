@@ -11,5 +11,6 @@ public class Test {
         List<String> s = Arrays.asList("aa","aa","aa","b","c","bb","bb","c");
         List<String> disctinctList = s.stream().distinct().collect(Collectors.toList());
         System.out.println(disctinctList);
+
     }
 }
